@@ -3,6 +3,26 @@ html{
   background-color: #f5f5f5;
 }
 
+nav>a:hover{
+  color: #2da690;
+}
+
+#service a:hover{
+  color: #2da690;
+}
+
+#news a:hover{
+  color: #2da690;
+}
+
+#aboutus a:hover{
+  color: #2da690;
+}
+
+#recruit a:hover{
+  color: #2da690;
+}
+
 @media screen and (min-width: 768px) {
 .open , .close {
   display: none;
@@ -463,14 +483,55 @@ footer{
     margin-left: 6em;
   }
 
-  .menu {
+  .open {
+    position: absolute;
+    top: 1rem;
+    right: 2.5rem;
+    color: #2da690;
+    font-weight: 700;
+}
+
+  nav.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background: rgba(255,255,255,0.87);;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav.menu a {
+    color: #2da690;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+
+  nav.menu .close {
+    align-self: flex-end;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #2da690;
+    margin-bottom: 20px;
+  }
+
+  #menu:checked ~ nav.menu {
+    transform: translateX(0);
+  }
+
+  .back {
     display: none;
   }
 
-  .menu a {
-    margin-left: 2em;
-    color: rgb(0,0,0);
-  }
+  #menu{
+    position: absolute;
+    left: 100vw;
+}
 
   #home{
     width: 100%;
@@ -896,14 +957,55 @@ footer{
     margin-left: 6em;
   }
 
-  .menu {
+  .open {
+    position: absolute;
+    top: 1rem;
+    right: 2.5rem;
+    color: #2da690;
+    font-weight: 700;
+}
+
+  nav.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background: rgba(255,255,255,0.87);;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav.menu a {
+    color: #2da690;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+
+  nav.menu .close {
+    align-self: flex-end;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #2da690;
+    margin-bottom: 20px;
+  }
+
+  #menu:checked ~ nav.menu {
+    transform: translateX(0);
+  }
+
+  .back {
     display: none;
   }
 
-  .menu a {
-    margin-left: 2em;
-    color: rgb(0,0,0);
-  }
+  #menu{
+    position: absolute;
+    left: 100vw;
+}
 
   #home{
     width: 100%;
